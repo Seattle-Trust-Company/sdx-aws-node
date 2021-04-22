@@ -15,8 +15,7 @@ SDX_NET_ID=18930236
 SDX_NAT_TYPE="any"
 
 # Grab Environment Variables
-SDX_BOOT_ENODE=${ENV_SDX_ENODE}
-NODE_IDENT=${ENV_NODE_IDENT}
+SDX_BOOT_ENODE="enode://ffb14enode://ffb143c241fec6cde474e28106d162ae5107e2d0ab322b27d71ec32567a650c1077bbdefc4951efbcb400de02ff86621c49b7d0d4dfdecc7862f979942a43c5e@172.31.6.161:30303"
 
 
 ### Main Execution
@@ -45,7 +44,6 @@ fi
 # Print Command for Debugging
 echo 'Running Command'
 echo "geth --datadir ${NODE_DIR} \
-	--identity \"${NODE_IDENT}\" \
 	--http \
 	--http.port ${SDX_HTTP_PORT} \
 	--http.api \"eth,net,web3,personal,miner,admin\" \
@@ -60,7 +58,6 @@ echo "geth --datadir ${NODE_DIR} \
 
 # Start-Up Boot Node
 geth --datadir ${NODE_DIR} \
-	--identity "${NODE_IDENT}" \
 	--http \
 	--http.port ${SDX_HTTP_PORT} \
 	--http.api "eth,net,web3,personal,miner,admin" \
@@ -71,4 +68,6 @@ geth --datadir ${NODE_DIR} \
   --allow-insecure-unlock \
   --bootnodes "${SDX_BOOT_ENODE}" \
   --verbosity 6
+
+#--identity "${NODE_IDENT}" \
 
