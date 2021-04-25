@@ -15,8 +15,8 @@ SDX_NET_ID=18930236
 SDX_NAT_TYPE="any"
 
 # Boot IP (uncomment private if on AWS, public if local)
-BOOT_IP='172.31.5.33'   # Private
-#BOOT_IP='3.141.232.198' # Public
+#BOOT_IP='172.31.5.33'   # Private
+BOOT_IP='3.141.232.198' # Public
 
 # Boot Enode
 SDX_BOOT_ENODE="enode://ffb143c241fec6cde474e28106d162ae5107e2d0ab322b27d71ec32567a650c1077bbdefc4951efbcb400de02ff86621c49b7d0d4dfdecc7862f979942a43c5e@${BOOT_IP}:30303"
