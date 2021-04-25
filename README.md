@@ -1,7 +1,7 @@
 # SDX AWS Node
 
 ## Description
-This repository contains the necessary scripts and data files to start up ethereum mining pools in AWS.
+This repository contains the necessary scripts and data files to start up ethereum mining pools in AWS. As of the latest commit, there are 5 pre-defined mining pools with names `bigsur`, `breakbot`, `babyrays`, `samesame`, and `tahoe`. Each has a corresponding geth account keystore held within `data`.
 
 ## Project Structure
 - `data`: Contains configuration files including the genesis block, pool keys, and the default password. Since we aren't mining real ETH, we are okay with exposing our password and keystore folders.
