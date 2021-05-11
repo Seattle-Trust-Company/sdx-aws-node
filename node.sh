@@ -9,8 +9,8 @@ DEFAULT_PWD_FILE="./data/default-password.txt"
 GENESIS_PATH="./data/genesis.json"
 
 # SDX Constants
-SDX_HTTP_PORT=8000
-SDX_PORT=30303
+SDX_HTTP_PORT=8002
+SDX_PORT=30305
 SDX_NET_ID=18930236
 SDX_NAT_TYPE="any"
 
